@@ -1,6 +1,6 @@
 {
   "name": "slapdash-commands",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "💻 Write your own commands for Slapdash.",
   "main": "./slapdash.js",
   "scripts": {
