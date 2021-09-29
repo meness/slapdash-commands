@@ -19,7 +19,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run release
-      - run: git run postrelease
+      - run: npm run postrelease
       - run: copy ./package.json ./dist/package.json
       - run: cd ./dist
       - run: npm publish --access public
