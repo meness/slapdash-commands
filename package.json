@@ -10,7 +10,7 @@
     "eslint:fix": "eslint --fix \"./src/**/*.ts\"",
     "build": "tsc && tsc-alias",
     "release": "standard-version",
-    "postrelease": "git push --follow-tags origin main",
+    "postrelease": "git push --follow-tags origin HEAD",
     "publish": "npm publish"
   },
   "devDependencies": {
