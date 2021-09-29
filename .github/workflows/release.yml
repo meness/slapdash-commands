@@ -22,12 +22,12 @@ jobs:
       - run: npm run postrelease
       - run: cp ./package.json ./dist/package.json
       - run: cd ./dist
-      - run: npm run publish -- --access public
+      - run: npm publish -- --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
       - uses: actions/setup-node@v2.4.1
         with:
           registry-url: 'https://npm.pkg.github.com'
-      - run: npm run publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
